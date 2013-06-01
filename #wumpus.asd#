@@ -1,0 +1,13 @@
+(defpackage #:wumps-config (:export #:*base-directory*))
+(defparameter wumps-config:*base-directory*
+  (make-pathname :name nil :type nil :defaults *load-truename*))
+
+(asdf:defsystem  "wumpus"
+  :serial t
+  :version "0.0.0"
+  :author "pnpuff"
+  :description "example from: http://landoflisp.com/source.html"
+  :license "GNU Affero General Public License"
+  :components ((:file "graph-util")
+	       (:file "wumpus" :depends-on ("graph-util"))))
+

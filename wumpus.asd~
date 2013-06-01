@@ -1,0 +1,8 @@
+(asdf:defsystem #:wumpus
+  :serial t
+  .description "http://landoflisp.com/source.html"
+  :license "GNU Affero General Public License"
+  :components ((:file "package")
+               (:file "graph-util")
+	       (:file "wumpus")))
+
